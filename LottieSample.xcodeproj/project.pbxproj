@@ -17,7 +17,7 @@
 		C632F3E124F110820026A4C5 /* LottieSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C632F3E024F110820026A4C5 /* LottieSampleUITests.swift */; };
 		C632F3F024F1139F0026A4C5 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C632F3EF24F1139F0026A4C5 /* Lottie.framework */; };
 		C632F3F124F1139F0026A4C5 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C632F3EF24F1139F0026A4C5 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C632F3F524F114D30026A4C5 /* lottie_rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = C632F3F424F114D30026A4C5 /* lottie_rocket.json */; };
+		C6BC668525CE8DFA00027A97 /* lottie_rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = C6BC668425CE8DFA00027A97 /* lottie_rocket.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,8 @@
 		C632F3E024F110820026A4C5 /* LottieSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieSampleUITests.swift; sourceTree = "<group>"; };
 		C632F3E224F110820026A4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C632F3EF24F1139F0026A4C5 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
-		C632F3F424F114D30026A4C5 /* lottie_rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lottie_rocket.json; path = ../../../../Downloads/lottie_rocket.json; sourceTree = "<group>"; };
+		C6BC667B25CE88BF00027A97 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		C6BC668425CE8DFA00027A97 /* lottie_rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_rocket.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		C632F3B224F1107B0026A4C5 = {
 			isa = PBXGroup;
 			children = (
+				C6BC667B25CE88BF00027A97 /* Config.xcconfig */,
 				C632F3BD24F1107B0026A4C5 /* LottieSample */,
 				C632F3D424F110820026A4C5 /* LottieSampleTests */,
 				C632F3DF24F110820026A4C5 /* LottieSampleUITests */,
@@ -161,7 +163,7 @@
 		C632F3F324F114C40026A4C5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C632F3F424F114D30026A4C5 /* lottie_rocket.json */,
+				C6BC668425CE8DFA00027A97 /* lottie_rocket.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -230,7 +232,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Yasutaka Iwamoto";
 				TargetAttributes = {
 					C632F3BA24F1107B0026A4C5 = {
@@ -271,9 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BC668525CE8DFA00027A97 /* lottie_rocket.json in Resources */,
 				C632F3CB24F110820026A4C5 /* LaunchScreen.storyboard in Resources */,
 				C632F3C824F110820026A4C5 /* Assets.xcassets in Resources */,
-				C632F3F524F114D30026A4C5 /* lottie_rocket.json in Resources */,
 				C632F3C624F1107B0026A4C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +384,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -406,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -442,6 +445,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -460,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
